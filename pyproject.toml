@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "grpcio-tools>=1.44.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opentelemetry-proto-profile"
+version = "0.1.0"
+description = "OpenTelemetry Proto Profiles"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "protobuf>=4.25.0",
+    "grpcio>=1.44.0",
+]
