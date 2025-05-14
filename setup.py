@@ -26,7 +26,7 @@ try:
         [
             "git",
             "checkout",
-            "298a60fa953bbdcfa8be54a9dccb6f90cb0711d9",  # February 11, 2025 commit
+            "ae87ce7c56e5fd356b77097b1d9a655ff00aa24f",  # February 11, 2025 commit
         ],
         cwd=os.path.join(temp_dir, "opentelemetry-proto")
     )
