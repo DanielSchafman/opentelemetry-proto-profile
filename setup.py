@@ -20,6 +20,16 @@ try:
             os.path.join(temp_dir, "opentelemetry-proto"),
         ]
     )
+    
+    # Checkout the specific commit that has the structure we want
+    subprocess.check_call(
+        [
+            "git",
+            "checkout",
+            "9d7c091a619d8f53c31cd54c0b604eec3f7611c1",  # March 26, 2025 commit
+        ],
+        cwd=os.path.join(temp_dir, "opentelemetry-proto")
+    )
 
     # Create output directories
     base_dir = os.path.dirname(os.path.abspath(__file__))
