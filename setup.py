@@ -26,7 +26,7 @@ try:
         [
             "git",
             "checkout",
-            "9d7c091a619d8f53c31cd54c0b604eec3f7611c1",  # March 26, 2025 commit
+            "298a60fa953bbdcfa8be54a9dccb6f90cb0711d9",  # February 11, 2025 commit
         ],
         cwd=os.path.join(temp_dir, "opentelemetry-proto")
     )
@@ -88,9 +88,9 @@ try:
     )
 
     profiles_proto = (
-        profiles_proto_experimental
-        if os.path.exists(profiles_proto_experimental)
-        else profiles_proto_development
+        profiles_proto_development
+        if os.path.exists(profiles_proto_development)
+        else profiles_proto_experimental
     )
 
     # Find the collector profiles service proto files
@@ -114,9 +114,9 @@ try:
     )
 
     collector_profiles_proto = (
-        collector_profiles_proto_experimental
-        if os.path.exists(collector_profiles_proto_experimental)
-        else collector_profiles_proto_development
+        collector_profiles_proto_development
+        if os.path.exists(collector_profiles_proto_development)
+        else collector_profiles_proto_experimental
     )
 
     # Common dependencies
