@@ -20,14 +20,14 @@ try:
             os.path.join(temp_dir, "opentelemetry-proto"),
         ]
     )
-    # subprocess.check_call(
-    #     [
-    #         "git",
-    #         "checkout",
-    #         "42319f8b5bf330f7c3dd4a097384f9f6d5467450",  # February 11, 2025 commit
-    #     ],
-    #     cwd=os.path.join(temp_dir, "opentelemetry-proto")
-    # )
+    subprocess.check_call(
+        [
+            "git",
+            "checkout",
+            "42319f8b5bf330f7c3dd4a097384f9f6d5467450",  # February 11, 2025 commit
+        ],
+        cwd=os.path.join(temp_dir, "opentelemetry-proto")
+    )
     # Create output directories
     base_dir = os.path.dirname(os.path.abspath(__file__))
 
